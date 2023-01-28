@@ -4,7 +4,7 @@
 
 ### Clone the repository
 ```
-git clone ...
+git clone git@github.com:juneil/simplified-distributed-exchange.git
 ```
 
 ### Install dependencies
