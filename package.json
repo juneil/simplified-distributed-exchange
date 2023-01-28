@@ -1,0 +1,18 @@
+{
+  "name": "simplified-distributed-exchange",
+  "version": "1.0.0",
+  "description": "Simplified Distributed Exchange",
+  "dependencies": {
+    "grenache-grape": "^0.9.11",
+    "grenache-nodejs-http": "^0.7.12",
+    "grenache-nodejs-link": "^0.7.12",
+    "pino": "^8.8.0",
+    "pino-pretty": "^9.1.1",
+    "uuid": "^9.0.0"
+  },
+  "scripts": {
+    "server": "node src/server/server.js",
+    "client": "node src/client/client.js",
+    "grape": "grape --dp 20001 --aph 30001 --bn '127.0.0.1:20002' & grape --dp 20002 --aph 40001 --bn '127.0.0.1:20001'"
+  }
+}
